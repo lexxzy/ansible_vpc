@@ -12,7 +12,7 @@ PriSub1Cidr: 172.20.5.0/24
 PriSub1Cidr: 172.20.6.0/24
 
 #region name
-region : ""us-east-2"
+region : "us-east-2"
 
 #zone Names
 zone1: us-east-1a
