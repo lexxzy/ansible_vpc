@@ -102,13 +102,13 @@
     - name: Set up public subnet routetable
       ec2_vpc_route_table:
         vpc_id: "{{vpcout.vpc.id}}"
-        region: "{{region}}"
+        region: "{{ region }}"
         tags:
           Name: Vprofile-Public
         subnets:
           - "{{ public1_out.subnet.id }}"
           - "{{ public2_out.subnet.id }}"
-          - "{{ public3_out.subnet_id }}"
+          - "{{ public3_out.subnet.id }}"
         routes:
           - dest: 0.0.0.0/0
             gateway_id: "{{ igw.gateway_id }}"
