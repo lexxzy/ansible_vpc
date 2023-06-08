@@ -90,3 +90,11 @@
                   resource_tags:
                     Name: vprofile-prisub3
       register: pri3_out
+    - name: internet Gateway setip
+      ec2_vpc_igw:
+        vpc_id: "{{vpcout.vpc.id}}"
+        region: "{{region}}"
+        state: present
+        resource_tags:
+          Name: Vprofile-IGW
+      register: igw
