@@ -16,8 +16,8 @@
         state: "{{state}}"
       register: vpcout
 
-    - debug:
-        var: vpcout
+    #- debug:
+    #   var: vpcout
 
     - name: create public subnet 1 in zone1
       ec2_vpc_subnet:
