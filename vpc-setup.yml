@@ -134,5 +134,5 @@
               - "{{ pri3_out.subnet.id }}"
             routes:
               - dest: 0.0.0.0/0
-                gateway_id: "{{ NAT_out.gateway_id }}"
+                gateway_id: "{{ NAT_out.nat_gateway_id }}"
       register: Vpro_private_route_table
