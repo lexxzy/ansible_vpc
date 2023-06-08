@@ -1,0 +1,22 @@
+vpc_name: "Vprofile-vpc"
+
+#vpc Range
+vpcCidr: '172.20.0.0/16'
+
+# subnets range
+PubSub1Cidr: 172.20.1.0/24
+PubSub1Cidr: 172.20.2.0/24
+PubSub1Cidr: 172.20.3.0/24
+PriSub1Cidr: 172.20.4.0/24
+PriSub1Cidr: 172.20.5.0/24
+PriSub1Cidr: 172.20.6.0/24
+
+#region name
+region : ""us-east-2"
+
+#zone Names
+zone1: us-east-1a
+zone2: us-east-1b
+zone3: us-east-1c
+
+state: present
