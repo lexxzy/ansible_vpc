@@ -137,3 +137,20 @@
               - dest: 0.0.0.0/0
                 gateway_id: "{{ NAT_out.nat_gateway_id }}"
       register: Vpro_private_route_table
+
+    - debug:
+        var: "{{item}}"
+      loop:
+        - vpcout.vpc.id
+        - public1_out.subnet.id
+        - public2_out.subnet.id
+        - public3_out.subnet.id
+        - pri1_out.subnet.id
+        - pri2_out.subnet.id
+        - pri3_out.subnet.id
+        - igw.gateway_id
+        - Vpro_public_route_table.route_table.id
+        - NAT_out.nat_gateway_id
+        - Vpro_private_route_table.route_table.id
+
+
