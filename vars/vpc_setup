@@ -20,3 +20,7 @@ zone2: us-east-1b
 zone3: us-east-1c
 
 state: present
+
+#Baston-Host-sg
+bastion_ami: ami-09988af04120b3591
+MYIP: 76.200.212.222/32
