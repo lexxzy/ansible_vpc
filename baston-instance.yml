@@ -5,7 +5,7 @@
   gather_facts: false
   tasks:
       - name: Import Vpc Setup Variable
-        include_vars: vars/baston_setup
+        include_vars: vars/vpc-setup
 
       - name: Import Vpc setup variable
         include_vars: vars/output_vars
